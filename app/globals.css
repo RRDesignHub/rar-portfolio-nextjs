@@ -1,3 +1,37 @@
 @import "tailwindcss";
 
+body{
+  background: #0d030c;
+}
 
+@theme{
+  --font-nunito: "Nunito", "snas-serif";
+  --font-heebo: "Heebo", "snas-serif";
+
+  /* Custom Colors */
+  --color-primary: #6617cb; 
+  --color-secondary: #cb218e; 
+  --color-light: #e8dcfc; 
+  --color-dark: #0d030c; 
+
+  /* Custom Backgrounds */
+  --bg-light: #f7fafc; 
+  --bg-dark: #0d030c;
+  --gradient-btn: linear-gradient(to right, #6617cb, #cb218e); 
+  --gradient-card: linear-gradient(to bottom, #ff7e5f, #feb47b);
+}
+
+@theme inline {
+  --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
+}
+ 
+@keyframes spotlight {
+  0% {
+    opacity: 0;
+    transform: translate(-72%, -62%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -40%) scale(1);
+  }
+}

@@ -10,8 +10,8 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="bg-gray-900 text-white fixed w-full top-0 z-50 shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="bg-transparent font-heebo text-light fixed w-full top-0 z-50 ">
+      <div className="w-11/12 mx-auto px-0">
         <div className="flex justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
@@ -22,16 +22,16 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="hover:text-indigo-400 transition-colors duration-200">
+            <Link href="/" className="border-b-2 border-transparent hover:border-amber-50 transition-colors duration-200">
               Home
             </Link>
-            <Link href="/about" className="hover:text-indigo-400 transition-colors duration-200">
+            <Link href="/about" className="border-b-2 border-transparent hover:border-amber-50 transition-colors duration-200">
               About
             </Link>
-            <Link href="/projects" className="hover:text-indigo-400 transition-colors duration-200">
+            <Link href="/projects" className="border-b-2 border-transparent hover:border-amber-50 transition-colors duration-200">
               Projects
             </Link>
-            <Link href="/contact" className="hover:text-indigo-400 transition-colors duration-200">
+            <Link href="/contact" className="border-b-2 border-transparent hover:border-amber-50 transition-colors duration-200">
               Contact
             </Link>
           </div>

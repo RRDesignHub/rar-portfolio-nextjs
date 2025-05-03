@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Heebo, Nunito } from "next/font/google";
 import "./globals.css";
+import logo from "@/public/RR_logo.png";
 import Navbar from "./components/Navbar";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+import Head from "next/head";
+const heebo = Heebo({
+  variable: "--font-heebo",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const nunito = Nunito({
+  variable: "--font-nunito",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -25,13 +28,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <header>
+      <Head>
+        <link rel="icon" href="./RR_logo.png" />
+      </Head>
+      <body className={`${heebo.variable} ${nunito.variable} antialiased`}>
+        <header className="h-[64px]">
           <Navbar />
         </header>
-        {children}
+        <main>{children}</main>
+        <footer></footer>
       </body>
     </html>
   );
