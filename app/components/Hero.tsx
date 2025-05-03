@@ -5,7 +5,7 @@ import { FaFacebookF, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa6"
 import bg from "@/public/bg_final_hero.png"
 export const Hero = () => {
   return (
-    <div className={`bg-[url('@/public/bg_final_hero.png')] bg-cover bg-center`}>
+    <div className={`bg-[url('/public/bg_final_hero.png')] bg-cover bg-center`}>
       <div className="w-full overflow-auto">
         <Spotlight
           className="top-40 -left-10 md:top-80 md:-left-32 h-screen overflow-hidden"
