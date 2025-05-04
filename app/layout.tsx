@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Heebo, Nunito } from "next/font/google";
+import {  Heebo, Nunito } from "next/font/google";
 import "./globals.css";
-import logo from "@/public/RR_logo.png";
 import Navbar from "./components/Navbar";
 import Head from "next/head";
 const heebo = Heebo({
