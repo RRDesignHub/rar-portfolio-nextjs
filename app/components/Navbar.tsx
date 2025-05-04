@@ -10,7 +10,7 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="bg-transparent font-heebo text-light fixed w-full top-0 z-50 ">
+    <nav className="bg-transparent font-heebo text-light fixed w-full top-0 z-50">
       <div className="w-11/12 mx-auto px-0">
         <div className="flex justify-between h-16">
           {/* Logo */}

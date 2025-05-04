@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Spotlight } from "./UI/Spotlight";
-
+import Image from "next/image";
+import selfImg from "@/public/hero-potriate.png"
 import {
   FaFacebookF,
   FaGithub,
@@ -45,10 +46,10 @@ export const Hero = () => {
           {/* Heading */}
           <div className="mt-32">
             <h1 className="text-2xl md:text-5xl font-heebo text-[#e8dcfc] font-bold ">
-            <TextGenerateEffect words="RIPANUL ALAM"/>
+              <TextGenerateEffect words="RIPANUL ALAM" />
             </h1>
             <h3 className="max-sm:w-[190px] text-base md:text-xl font-nunito text-[hsl(263,94%,83%)] opacity-40 mt-2">
-            Junior Frontend Developer | MERN Enthusiast
+              Junior Frontend Developer | MERN Enthusiast
             </h3>
           </div>
           {/* Call-to-Action Buttons */}
@@ -80,11 +81,13 @@ export const Hero = () => {
 
         {/* Middle Column: Hero Image */}
         <div className="w-1/2 md::w-3/12 relative flex justify-center items-center md:mt-10 lg:mt-0">
-          <div className="hero-img w-[150px] md:w-[240px]">
-            <img
-              src="https://i.ibb.co.com/XZYd9HK4/hero-potriate.png"
+          <div className="hero-img">
+            <Image
+              src={selfImg} // Must be absolute URL or local
               alt="Hero Portrait"
-              className="w-full"
+              width={240}
+              className="object-cover" // or "object-contain" depending on your layout
+              priority // Loads this image eagerly (good for above-the-fold images)
             />
           </div>
         </div>
