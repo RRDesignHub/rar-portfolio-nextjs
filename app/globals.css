@@ -4,6 +4,10 @@ body{
   background: #0d030c;
 }
 
+.hero-bg{
+  background-image: url("./assets/bg_final_hero.png");
+}
+
 @theme{
   --font-nunito: "Nunito", "snas-serif";
   --font-heebo: "Heebo", "snas-serif";
@@ -19,6 +23,9 @@ body{
   --bg-dark: #0d030c;
   --gradient-btn: linear-gradient(to right, #6617cb, #cb218e); 
   --gradient-card: linear-gradient(to bottom, #ff7e5f, #feb47b);
+
+  --bg-heroBg: url("./assets/bg_final_hero.png");
+  
 }
 
 @theme inline {
