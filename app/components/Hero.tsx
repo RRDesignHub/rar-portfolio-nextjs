@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Spotlight } from "./UI/Spotlight";
-import Image from "next/image";
+
 import {
   FaFacebookF,
   FaGithub,
