@@ -31,7 +31,7 @@ export default function RootLayout({
         <link rel="icon" href="./RR_logo.png" />
       </Head>
       <body className={`${heebo.variable} ${nunito.variable} antialiased`}>
-        <header className="h-[64px]">
+        <header className="pt-[64px]">
           <Navbar />
         </header>
         <main>{children}</main>

@@ -11,22 +11,22 @@ import { TextGenerateEffect } from "./UI/TextGenerate";
 
 export const Hero = () => {
   return (
-    <div className="hero-bg bg-no-repeat bg-cover overflow-hidden">
+    <div className="hero-bg bg-no-repeat bg-cover overflow-hidden ">
       <div className="w-full">
         <Spotlight
-          className="top-40 -left-10 md:top-80 md:-left-32 h-screen overflow-hidden"
+          className="top-40 -left-10 md:top-80 md:-left-32 h-screen "
           fill="pink"
         />
         <Spotlight
-          className="top-60 lg:top-10 left-[90vw] lg:left-[80vw] h-[100vh] lg:h-[80vh] lg:w-[60vw]"
+          className="top-14 lg:top-10 left-24 lg:left-[50vw] h-[40vh] lg:h-[80vh] lg:w-[60vw]"
           fill="purple"
         />
         <Spotlight
-          className="-top-20 left-60 lg:top-28 lg:left-[420px] h-[100vh] lg:h-[90vh] lg:w-[60vw]"
+          className="top-40 left-32 lg:top-48 lg:left-[550px] h-screen lg:w-[60vw]"
           fill="white"
         />
       </div>
-      <div className="w-11/12 mx-auto flex flex-row max-sm:flex-wrap justify-between items-center">
+      <div className="w-11/12 mx-auto relative z-40 flex flex-row max-sm:flex-wrap justify-between items-center">
         {/* Left Column */}
         <div className="w-1/2 md:w-5/12 relative">
           {/* Shape Text Block */}

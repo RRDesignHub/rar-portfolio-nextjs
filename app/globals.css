@@ -2,6 +2,7 @@
 
 body{
   background: #0d030c;
+  overflow-x: hidden;
 }
 
 .hero-bg{
