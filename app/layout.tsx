@@ -3,6 +3,7 @@ import {  Heebo, Nunito } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Head from "next/head";
+import { Footer } from "./components/Footer";
 const heebo = Heebo({
   variable: "--font-heebo",
   subsets: ["latin"],
@@ -35,7 +36,9 @@ export default function RootLayout({
           <Navbar />
         </header>
         <main>{children}</main>
-        <footer></footer>
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );

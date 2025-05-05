@@ -9,6 +9,7 @@ import {
   FaTwitter,
 } from "react-icons/fa6";
 import { TextGenerateEffect } from "./UI/TextGenerate";
+import MagicButton from "./UI/MagicButton";
 
 export const Hero = () => {
   return (
@@ -32,20 +33,20 @@ export const Hero = () => {
         <div className="w-1/2 md:w-5/12 relative">
           {/* Shape Text Block */}
           <div
-            className="absolute top-16 lg:top-12 left-0 bg-[#e8dcfc] opacity-90 w-24 h-16 md:w-32 md:h-20 flex items-center justify-center rounded"
+            className="absolute top-16 lg:top-12 left-0 bg-light opacity-90 w-24 h-16 md:w-32 md:h-20 flex items-center justify-center rounded"
             style={{
               clipPath:
                 "polygon(0% 0%, 100% 0%, 100% 75%, 30% 75%, 10.1% 100%, 10% 75%, 0% 75%)",
             }}
           >
-            <h4 className="text-center text-[#0d030c] text-sm font-semibold pb-4">
+            <h4 className="text-center text-dark text-sm font-semibold pb-4">
               Hey there,
               <br />I am
             </h4>
           </div>
           {/* Heading */}
           <div className="mt-32">
-            <h1 className="text-2xl md:text-5xl font-heebo text-[#e8dcfc] font-bold ">
+            <h1 className="text-2xl md:text-4xl lg:text-6xl font-heebo text-light font-bold ">
               <TextGenerateEffect words="RIPANUL ALAM" />
             </h1>
             <h3 className="max-sm:w-[190px] text-base md:text-xl font-nunito text-[hsl(263,94%,83%)] opacity-40 mt-2">
@@ -53,20 +54,19 @@ export const Hero = () => {
             </h3>
           </div>
           {/* Call-to-Action Buttons */}
-          <div className="mt-6 flex max-sm:flex-col max-sm:w-fit gap-y-2 md:space-x-4">
+          <div className="mt-6 flex max-sm:flex-col md:items-center max-sm:w-fit gap-y-2 md:space-x-4">
             <a
               href="https://drive.google.com/file/d/125hDpjV4NzaIwiG1aRQIrzaVpoP9uEw9/view?usp=drive_link" // Provide the actual path to your resume PDF file
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 text-center bg-gradient-to-r from-[#6617cb] to-[#cb218e] text-[#e8dcfc] font-semibold rounded hover:bg-gradient-to-l transition duration-300"
+              className="px-4 py-3 flex justify-center items-center text-center bg-gradient-to-r from-primary to-secondary text-light font-semibold rounded-xl hover:bg-gradient-to-l transition duration-300"
             >
               RESUME
             </a>
             <Link
               href="/skills"
-              className="px-4 py-2 text-center border border-[#e8dcfc] text-[#e8dcfc] font-semibold rounded hover:bg-[#e8dcfc] hover:text-[#0d030c] transition duration-300"
             >
-              MY SKILLS
+              <MagicButton title="MY SKILLS"/>
             </Link>
           </div>
           {/* Transparent Text Image */}
@@ -94,52 +94,52 @@ export const Hero = () => {
         {/* Right Column: Tagline and Social Icons */}
         <div className="lg:w-4/12 mt-10 lg:mt-0">
           <div className="tag-line">
-            <h3 className="text-xl font-nunito md:text-2xl text-[#e8dcfc] font-bold">
+            <h3 className="text-xl font-nunito md:text-2xl text-light font-bold">
               Explore my journey in design and development, blending creativity,
               precision, and passion for innovation.
             </h3>
           </div>
           <div className="mt-6">
-            <h5 className="text-lg text-[#e8dcfc] font-semibold">
+            <h5 className="text-lg text-light font-semibold">
               Follow Me In:
             </h5>
             <ul className="flex space-x-4 mt-2">
-              <li className="bg-gradient-to-r from-[#6617cb] via-[#cb218e] to-[#6617cb] bg-[length:200%_100%] bg-[position:right_center] h-10 w-10 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out">
+              <li className="bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_100%] bg-[position:right_center] h-10 w-10 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out">
                 <a
                   href="https://www.facebook.com/rrdesignhub"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#e8dcfc] "
+                  className="text-light "
                 >
                   <FaFacebookF size={20} />
                 </a>
               </li>
-              <li className="bg-gradient-to-r from-[#6617cb] via-[#cb218e] to-[#6617cb] bg-[length:200%_100%] bg-[position:right_center] h-10 w-10 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out">
+              <li className="bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_100%] bg-[position:right_center] h-10 w-10 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out">
                 <a
                   href="https://www.twitter.com/RipanulR18324"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#e8dcfc] "
+                  className="text-light "
                 >
                   <FaTwitter size={20} />
                 </a>
               </li>
-              <li className="bg-gradient-to-r from-[#6617cb] via-[#cb218e] to-[#6617cb] bg-[length:200%_100%] bg-[position:right_center] h-10 w-10 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out">
+              <li className="bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_100%] bg-[position:right_center] h-10 w-10 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out">
                 <a
                   href="https://www.linkedin.com/in/ripanul-alam-ridoy-ab00652a6"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#e8dcfc] "
+                  className="text-light "
                 >
                   <FaLinkedinIn size={20} />
                 </a>
               </li>
-              <li className="bg-gradient-to-r from-[#6617cb] via-[#cb218e] to-[#6617cb] bg-[length:200%_100%] bg-[position:right_center] h-10 w-10 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out">
+              <li className="bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_100%] bg-[position:right_center] h-10 w-10 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out">
                 <a
                   href="https://github.com/RRDesignHub"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#e8dcfc]"
+                  className="text-light"
                 >
                   <FaGithub size={20} />
                 </a>
