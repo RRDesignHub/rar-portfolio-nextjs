@@ -12,22 +12,22 @@ import { TextGenerateEffect } from "./UI/TextGenerate";
 
 export const Hero = () => {
   return (
-    <div className="hero-bg bg-no-repeat bg-cover overflow-hidden ">
-      <div className="w-full">
+    <div className="hero-bg bg-no-repeat bg-cover max-sm:bg-contain md:bg-center overflow-hidden ">
+      <div className="w-full overflow-hidden">
         <Spotlight
-          className="top-40 -left-10 md:top-80 md:-left-32 h-screen "
+          className="-top-14 left-20 md:top-36 md:left-[50vw] h-screen"
           fill="pink"
         />
         <Spotlight
-          className="top-14 lg:top-10 left-24 lg:left-[50vw] h-[40vh] lg:h-[80vh] lg:w-[60vw]"
+          className="-top-18 lg:top-10 left-32 lg:left-[50vw] h-[100vh] lg:h-[80vh] lg:w-[60vw]"
           fill="purple"
         />
         <Spotlight
-          className="top-40 left-32 lg:top-48 lg:left-[550px] h-screen lg:w-[60vw]"
+          className="top-10 left-32 lg:top-40 lg:left-[550px] h-screen lg:h-[100vh] lg:w-[60vw] z-10"
           fill="white"
         />
       </div>
-      <div className="w-11/12 mx-auto relative z-40 flex flex-row max-sm:flex-wrap justify-between items-center">
+      <div className="md:w-11/12 mx-auto relative z-40 flex flex-row max-sm:flex-wrap justify-between items-center px-2 md:px-0">
         {/* Left Column */}
         <div className="w-1/2 md:w-5/12 relative">
           {/* Shape Text Block */}
@@ -80,14 +80,13 @@ export const Hero = () => {
         </div>
 
         {/* Middle Column: Hero Image */}
-        <div className="w-1/2 md::w-3/12 relative flex justify-center items-center md:mt-10 lg:mt-0">
-          <div className="hero-img">
+        <div className="w-1/2 md:w-3/12 relative flex justify-end md:justify-center items-center md:mt-10 lg:mt-0">
+          <div className="hero-img w-[160px] md:w-[240px]">
             <Image
-              src={selfImg} // Must be absolute URL or local
+              src={selfImg} 
               alt="Hero Portrait"
-              width={240}
-              className="object-cover" // or "object-contain" depending on your layout
-              priority // Loads this image eagerly (good for above-the-fold images)
+              className="w-full object-cover"
+              priority 
             />
           </div>
         </div>

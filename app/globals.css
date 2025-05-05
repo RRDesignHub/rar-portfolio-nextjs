@@ -25,6 +25,10 @@ body{
   --gradient-btn: linear-gradient(to right, #6617cb, #cb218e); 
   --gradient-card: linear-gradient(to bottom, #ff7e5f, #feb47b);
 
+  --drop-shadow-primaryDark: 0 4px 12px rgba(13, 3, 12, 0.6);
+  --drop-shadow-primary: 0 4px 12px rgba(102, 23, 203, 0.6);
+  --drop-shadow-secondary: 0 4px 12px rgba(203, 33, 142, 0.6);
+
   --bg-heroBg: url("./assets/bg_final_hero.png");
   
 }

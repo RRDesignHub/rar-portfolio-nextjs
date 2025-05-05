@@ -16,7 +16,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/">
-              <Image className="w-16" src={logo} alt="Ripanul_Alam"/>
+              <Image width={64} className="drop-shadow-[var(--drop-shadow-primaryDark)]" src={logo} alt="Ripanul_Alam"/>
             </Link>
           </div>
 
@@ -40,7 +40,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMenu}
-              className="text-white focus:outline-none"
+              className="text-white bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_100%] bg-[position:right_center] h-10 w-10 rounded-lg flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none"
               aria-label="Toggle menu"
             >
               <svg
