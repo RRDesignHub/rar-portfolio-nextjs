@@ -46,7 +46,7 @@ export const Hero = () => {
           </div>
           {/* Heading */}
           <div className="mt-32">
-            <h1 className="text-2xl md:text-4xl lg:text-6xl font-heebo text-light font-bold ">
+            <h1 className="text-[24px] md:text-4xl lg:text-6xl font-heebo text-light font-bold ">
               <TextGenerateEffect words="RIPANUL ALAM" />
             </h1>
             <h3 className="max-sm:w-[190px] text-base md:text-xl font-nunito text-[hsl(263,94%,83%)] opacity-40 mt-2">
@@ -59,7 +59,7 @@ export const Hero = () => {
               href="https://drive.google.com/file/d/125hDpjV4NzaIwiG1aRQIrzaVpoP9uEw9/view?usp=drive_link" // Provide the actual path to your resume PDF file
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-3 flex justify-center items-center text-center bg-gradient-to-r from-primary to-secondary text-light font-semibold rounded-xl hover:bg-gradient-to-l transition duration-300"
+              className="px-8 md:px-4 py-3 flex justify-center items-center text-center bg-gradient-to-r from-primary to-secondary text-light font-semibold rounded-xl hover:bg-gradient-to-l transition duration-300"
             >
               RESUME
             </a>
