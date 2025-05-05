@@ -1,8 +1,6 @@
 export default function MagicButton({
-  title, handleClick, otherClasses
-}: {
-  title: string; handleClick?:() =>void; otherClasses?: string
-}) {
+  title}: {
+  title: string;}) {
   return (
     <button className="relative inline-flex h-12 overflow-hidden rounded-xl p-[1px] ">
       <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#6617CB_0%,#CB218E_50%,#6617CB_100%)]" />
